@@ -12,4 +12,4 @@ function big(num1: number, num2: number, num3: number): string {
         return `Les nombres doivent être différents`;
     }
 }
-console.log(5, 10, 15);
+console.log(big(5, 10, 15));
