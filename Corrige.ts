@@ -97,15 +97,16 @@ console.log(`Le nombre le plus grand est ${plusGrandNombreDeux(5, 10, 305473)}`)
      * @returns 
      */
     function calculerMoyenne(...notes: number []): number {
-        let moyenne = 0;
-        for (let note of notes){
-            if (verifierNote(note)){
-            moyenne += note;
-        } else {
-            console.log(`La note ${note} a été ignorée car non valide!`);          
+            let moyenne = 0;
+            for (let note of notes){
+                if (verifierNote(note)){
+                moyenne += note;
+            } else {
+                console.log(`La note ${note} a été ignorée car non valide!`);          
+            }
         }
+        return moyenne / notes.length;
     }
-    return moyenne / notes.length;
 
 
     /**
